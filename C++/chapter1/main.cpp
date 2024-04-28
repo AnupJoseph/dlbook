@@ -14,4 +14,11 @@ void intro_scalars_and_matrix() {
   torch::Tensor tensor = torch::randn({3, 4, 5});
   std::cout << "Tensor\n" << tensor << "\n";
 }
-int main() { intro_scalars_and_matrix(); }
+
+void transpose_example() {
+  torch::Tensor tr = torch::ones(5);
+  std::cout << "Transpose\n" << tr.transpose(0, -1) << "\n";
+}
+int main() {
+  // intro_scalars_and_matrix();
+}
